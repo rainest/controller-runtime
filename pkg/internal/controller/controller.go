@@ -232,7 +232,7 @@ func (c *Controller) Start(ctx context.Context) error {
 		return nil
 	}()
 	if err != nil {
-		return err
+		return nil
 	}
 
 	<-ctx.Done()
